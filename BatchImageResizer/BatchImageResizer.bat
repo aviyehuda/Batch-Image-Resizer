@@ -1,0 +1,2 @@
+java -Xms512m -Xmx512m -cp ./lib/pivot-wtk-1.4.jar;./lib/pivot-wtk-terra-1.4.jar;./lib/pivot-web-server-1.4.jar;./lib/pivot-web-1.4.jar;./lib/pivot-tools-1.4.jar;./lib/pivot-core-1.4.jar;./bin/; com.aviyehuda.batchimageresizer.Manager
+REM pause

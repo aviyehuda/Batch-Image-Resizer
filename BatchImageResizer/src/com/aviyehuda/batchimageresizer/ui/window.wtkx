@@ -1,0 +1,54 @@
+<Window title="Batch Image Resizer" maximized="true"
+    xmlns:wtkx="http://pivot.apache.org/wtkx"
+    xmlns="org.apache.pivot.wtk" width="300" >
+  
+
+    <content>
+        <Border styles="{padding:30}">
+            <content>
+                <BoxPane orientation="vertical" styles="{spacing:16}"  >
+                    <Label text="Batch Image Resizer" styles="{font:'Arial 18', color:'#ff2222',
+              	  horizontalAlignment:'center', verticalAlignment:'center'}" />
+
+			<Border title="Input" styles="{padding:20}">
+                     <content>
+                      <BoxPane orientation="vertical" styles="{spacing:16}"  >
+                    <BoxPane styles="{padding:4, verticalAlignment:'center'}">
+                     
+	            		<Label text="Input Folder:"/>
+	           			<TextInput textSize="40" wtkx:id="inputFolder"/>
+	           			<PushButton wtkx:id="browseButtonIn" buttonData="Browse"/>
+	           			
+	        		</BoxPane>
+	        		
+	        		    	</BoxPane>
+	        		</content>
+	           	</Border>
+	           	<Border title="Output" styles="{padding:20}">
+            <content>
+                <BoxPane orientation="vertical" styles="{spacing:16}"  >		
+	        		   
+	        		<BoxPane styles="{padding:4, verticalAlignment:'center'}">
+	            		<Label text="Output Folder:"/>
+	           			 <TextInput textSize="40" wtkx:id="outputFolder"/>
+	           			  <PushButton wtkx:id="browseButtonOut" buttonData="Browse"/>
+	        		</BoxPane>
+	        		
+	        		<BoxPane styles="{padding:4, verticalAlignment:'center'}">
+	            		<Label text="Size Percentage:"/>
+	           			 <TextInput text="50" textSize="4" wtkx:id="sizePercentage"/>
+	        	
+	        		</BoxPane>
+
+	        		    </BoxPane>
+	        		</content>
+	           	</Border>
+	           	
+	           	
+                     <PushButton wtkx:id="resizeButton" buttonData="Resize Images"/>
+                </BoxPane>
+            </content>
+        </Border>
+    </content>
+</Window>
+
